@@ -10,12 +10,8 @@
     "lint:prettier:check": "prettier . --check",
     "lint:prettier:write": "prettier . --write",
     "test": "jest",
-    "test:watch": "jest --watchAll --runInBand --verbose"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test && yarn lint:prettier:write && yarn lint && yarn build"
-    }
+    "test:watch": "jest --watchAll --runInBand --verbose",
+    "prepare": "husky"
   },
   "dependencies": {
     "husky": "^9.1.7",

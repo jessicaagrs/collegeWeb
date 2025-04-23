@@ -1,0 +1,4 @@
+yarn test
+yarn lint
+yarn lint:prettier:write
+yarn build

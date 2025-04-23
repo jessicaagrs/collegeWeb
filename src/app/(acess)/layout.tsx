@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins, Roboto } from 'next/font/google';
-import '../styles/globals.css';
+import '../../styles/globals.css';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -17,18 +17,17 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'College Demo',
-  description: 'Site para gerenciamento de alunos de escola.',
+  title: 'Acesso',
+  description: 'Área de acesso ao sistema',
 };
 
-export default function RootLayout({
+export default function AcessLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <link rel="icon" href="/logo.svg" type="image/svg" sizes="32x32" />
+    <html lang="pt-Br">
       <body className={`${poppins.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>

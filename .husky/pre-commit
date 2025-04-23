@@ -1,4 +1,11 @@
+echo "Executando testes..."
 yarn test
+
+echo "Executando lint..."
 yarn lint
+
+echo "Corrigindo formatação com Prettier..."
 yarn lint:prettier:write
+
+echo "Construindo o projeto..."
 yarn build

@@ -11,7 +11,7 @@
     "lint:prettier:write": "prettier . --write",
     "test": "jest",
     "test:watch": "jest --watchAll --runInBand --verbose",
-    "prepare": "husky"
+    "prepare": "yarn test && yarn lint && yarn lint:prettier:write && yarn build"
   },
   "dependencies": {
     "husky": "^9.1.7",

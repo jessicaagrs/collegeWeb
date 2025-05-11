@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-:root {
+@theme {
   --color-100: #4d44b5;
   --color-200: #fb7d5b;
   --color-300: #fcc43e;
@@ -37,6 +37,7 @@ body {
   background: var(--color-800);
   color: var(--color-700);
   font-family: var(--font-poppins), sans-serif;
+  height: 100%;
 }
 
 .heading-100 {

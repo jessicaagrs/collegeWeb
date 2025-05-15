@@ -1,13 +1,8 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
-
 type TitleProps = {
   children: React.ReactNode;
+  className?: string;
 };
 
-export const Title = ({ children }: TitleProps) => {
-  const pathname = usePathname();
-  console.log(pathname);
-  return <h1>{children}</h1>;
+export const Title = ({ children, className }: TitleProps) => {
+  return <h1 className={className}>{children}</h1>;
 };

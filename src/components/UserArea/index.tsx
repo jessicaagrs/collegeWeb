@@ -5,24 +5,24 @@ import Image from 'next/image';
 
 export default function UserArea() {
   return (
-    <div>
-      <button>
-        <NotificationIcon />
+    <div className="flex items-center gap-6">
+      <button className='cursor-pointer'>
+        <NotificationIcon className="text-(--color-1100)" />
       </button>
-      <Link href="/profile">
-        <SettingsIcon />
+      <Link href="/settings">
+        <SettingsIcon className="text-(--color-1100)" />
       </Link>
-      <div>
+      <div className="flex gap-3 items-center">
         <div>
-          <p>Luiza A.</p>
-          <span>Admin</span>
+          <p className="text-semibold-200">Luiza A.</p>
+          <span className="text-(--color-1100) text-sm">Admin</span>
         </div>
         <div>
           <Image
             src="/user-circle.svg"
             alt="Imagem de perfil"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
           />
         </div>
       </div>

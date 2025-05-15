@@ -18,7 +18,7 @@ export const Menu = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-xs bg-(--color-100) min-h-screen pt-14 pl-12 flex flex-col gap-14">
+    <nav className="bg-(--color-100) min-h-screen pt-14 pl-12 flex flex-col gap-14 row-start-1 row-end-3">
       <div className="flex gap-4">
         <div>
           <Image src="/logo.svg" alt="Logo site" width={28} height={28} />
@@ -100,7 +100,7 @@ export const Menu = () => {
         </li>
       </ul>
       <footer className="text-(--color-900) flex flex-col gap-4 mb-4">
-        <p className="text-sm font-bold">
+        <p className="text-xs font-bold">
           Todos os direitos reservados. &copy; 2025
         </p>
         <span className="text-xs">

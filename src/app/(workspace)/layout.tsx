@@ -19,7 +19,7 @@ export default function WorkspaceLayout({
     <main className="grid grid-cols-[minmax(0,300px)_1fr_minmax(0,300px)] grid-rows-[100px_auto]">
       <Menu />
       <div className="col-start-2 col-end-4 flex justify-between items-center py-5 px-10">
-        <Title className='heading-300'>Dashboard</Title>
+        <Title className="heading-300">Dashboard</Title>
         <Search />
         <UserArea />
       </div>

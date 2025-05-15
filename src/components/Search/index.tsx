@@ -1,4 +1,4 @@
-import { SearchIcon } from "../Icons/SearchIcon";
+import { SearchIcon } from '../Icons/SearchIcon';
 
 export const Search = () => {
   return (

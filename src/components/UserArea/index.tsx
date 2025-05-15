@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function UserArea() {
   return (
     <div className="flex items-center gap-6">
-      <button className='cursor-pointer'>
+      <button className="cursor-pointer">
         <NotificationIcon className="text-(--color-1100)" />
       </button>
       <Link href="/settings">

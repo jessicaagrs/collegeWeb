@@ -1,21 +1,21 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-100: #4d44b5;
-  --color-200: #fb7d5b;
-  --color-300: #fcc43e;
-  --color-400: #4cbc9a;
-  --color-500: #ff4550;
-  --color-600: #ffffff;
-  --color-700: #303972;
-  --color-800: #f3f4ff;
-  --color-900: #f5f5f5;
-  --color-1000: #c1bbeb;
-  --color-1100: #a098ae;
-  --color-1200: #de6b3e;
-  --color-1300: #121212;
-  --color-transparency-100: rgba(77, 68, 181, 10%);
-  --color-gradient-100: linear-gradient(
+  --color-custom-100: #4d44b5;
+  --color-custom-200: #fb7d5b;
+  --color-custom-300: #fcc43e;
+  --color-custom-400: #4cbc9a;
+  --color-custom-500: #ff4550;
+  --color-custom-600: #ffffff;
+  --color-custom-700: #303972;
+  --color-custom-800: #f3f4ff;
+  --color-custom-900: #f5f5f5;
+  --color-custom-1000: #c1bbeb;
+  --color-custom-1100: #a098ae;
+  --color-custom-1200: #de6b3e;
+  --color-custom-1300: #121212;
+  --color-custom-transparency-100: rgba(77, 68, 181, 10%);
+  --color-custom-gradient-100: linear-gradient(
     90deg,
     rgba(251, 125, 91, 1) 0%,
     rgba(251, 125, 91, 0.04) 100%
@@ -25,83 +25,23 @@
     rgba(252, 196, 62, 1) 0%,
     rgba(252, 196, 62, 0.04) 100%
   );
-  --color-gradient-300: linear-gradient(
+  --color-custom-gradient-300: linear-gradient(
     90deg,
     rgba(77, 68, 181, 1) 0%,
     rgba(48, 57, 114, 1) 100%
   );
-  --margin-auto: 0 auto;
+  --margin-custom-auto: 0 auto;
 }
 
-body {
-  background: var(--color-800);
-  color: var(--color-700);
-  font-family: var(--font-poppins), sans-serif;
+html,
+body,
+#__next {
   height: 100%;
 }
 
-.heading-100 {
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: bold;
-}
-
-.heading-200 {
-  font-size: 2.5rem;
-  line-height: 2.75rem;
-  font-weight: bold;
-}
-
-.heading-300 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: bold;
-}
-
-.heading-400 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: bold;
-}
-
-.heading-500 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: bold;
-}
-
-.heading-600 {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: bold;
-}
-
-.text-semibold-100 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
-
-.text-semibold-200 {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-}
-
-.text-medium-100 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 500;
-}
-
-.text-medium-200 {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-}
-
-.text-regular-100 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 400;
+body {
+  background: var(--color-custom-800);
+  color: var(--color-custom-700);
+  font-family: var(--font-poppins), sans-serif;
+  height: 100%;
 }
